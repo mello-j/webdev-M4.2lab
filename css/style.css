@@ -1,0 +1,116 @@
+/*
+* General formatting for text, headers, and body. I was having trouble getting the 
+* text centered, and differntiating between cursive/regular font and uppercase.
+* I realized a lot of redundant code could be removing the individual styling of each.
+*/
+body {
+    background-color: grey;
+    font-family: Arial, sans-serif;
+    font-size: larger;
+}
+
+h1 {
+    text-shadow:  2px 2px rgb(17, 17, 17);
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+
+/*
+*Individual element styling for the page going element by element.
+*/
+
+/* Header styling and child elements */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: limegreen;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Title contains the page title and page image*/
+.title {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background-color: limegreen;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img { 
+    width: 75px;
+    height: auto;
+    position: absolute;
+    right: 2%;
+}
+
+/* Nav styling and child elements */
+nav {
+    display: flex;
+    flex: 2;
+    background-color: rgba(56, 249, 17, 0.707);
+    justify-content: space-between
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Main content styling - this includes the article for content, and the aside for the images*/
+main {
+    display: flex;
+    background-color: limegreen;
+    padding: 10px;
+}
+
+article {
+    background-color: rgba(56, 249, 17, 0.707);
+    padding: 10px;
+}
+
+aside {
+    display: flex;
+    width: 25%;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    background-color: rgba(56, 249, 17, 0.707);
+    margin-left: 10px;
+    padding: 10px;
+}
+
+aside a {
+    width: 48%;
+}
+
+aside img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/*Footer styling.....this is dumb comment but wanted to complete the documentation*/
+footer {
+    background-color: limegreen;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: smaller;
+    height: 100%;
+}
