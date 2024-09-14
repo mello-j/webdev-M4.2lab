@@ -83,20 +83,18 @@ main {
 article {
     background-color: rgba(56, 249, 17, 0.707);
     padding: 10px;
+    flex: auto;
 }
 
 aside {
     display: flex;
-    width: 25%;
     flex-wrap: wrap;
     text-transform: uppercase;
     background-color: rgba(56, 249, 17, 0.707);
-    margin-left: 10px;
-    padding: 10px;
-}
+    margin-left: 10px;}
 
 aside a {
-    width: 48%;
+    width: 50%;
 }
 
 aside img {
